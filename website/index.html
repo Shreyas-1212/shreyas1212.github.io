@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guru Gruha Consultants | Quality Living</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="tab-layout">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#" onclick="showPanel('home'); return false;">Guru Gruha Consultants</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link nav-tab active" href="#" data-panel="home">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="about">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="purpose">Purpose</a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="principles">Principles</a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="founders">Our Founders</a></li>
+          <li class="nav-item"><a class="nav-link nav-tab btn-contact" href="#" data-panel="contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PANEL: HOME -->
+  <div id="panel-home" class="page-panel active hero panel-scrollable" style="padding-top:0;">
+    <div class="hero-overlay"></div>
+    <!-- Hero text — full viewport height -->
+    <div class="hero-viewport">
+      <div class="container hero-content text-center text-white">
+        <img src="images/logo.png" alt="Guru Gruha Consultants" class="hero-logo mb-3" />
+        <p class="hero-tagline">Building Legacy Since Day One</p>
+        <h1>Creating Happy Places<br />for Quality Living</h1>
+        <p class="hero-sub">Residential &bull; Commercial &bull; Industrial &bull; Infrastructure</p>
+        <div class="hero-cta-row">
+          <a href="#" class="btn btn-hero" onclick="showPanel('projects'); return false;">Explore Our Work</a>
+          <a href="#" class="btn btn-hero-outline" onclick="showPanel('contact'); return false;">Get In Touch</a>
+        </div>
+      </div>
+      <p class="hero-scroll-hint">&#8595; Scroll to meet our founders</p>
+    </div>
+    <!-- Founder cards on home -->
+    <div class="home-founders-strip">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="section-label">Meet Our Founders</span>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-5">
+            <div class="founder-card">
+              <div class="founder-card-header">
+                <div class="founder-photo-wrap">
+                  <img src="images/owner.jpg" alt="Sunil Nataraj" class="founder-photo" />
+                </div>
+                <div class="founder-card-intro">
+                  <h2 class="founder-card-name">Dr. Sunil Nataraj</h2>
+                  <p class="founder-role">Structural Engineer &amp; Director</p>
+                  <div class="founder-contact">
+                    <a href="mailto:sunilraj7851@gmail.com" class="founder-link">&#9993; sunilraj7851@gmail.com</a>
+                    <a href="tel:+919606957901" class="founder-link">&#128222; +91 9606957901</a>
+                  </div>
+                </div>
+              </div>
+              <p class="section-text mt-3">With 10+ years of experience spanning industry consultancies and advanced structural research, Sunil translates the latest advances in structural behaviour into practice — going beyond standard design codes to deliver solutions that are technically rigorous and built to last.</p>
+              <h6 class="timeline-heading">Qualifications</h6>
+              <div class="founder-quals">
+                <div class="qual-item"><span class="qual-year">2021</span><span class="qual-text">PhD in Structural Engineering</span></div>
+                <div class="qual-item"><span class="qual-year">2015</span><span class="qual-text">MTech in Structural Engineering</span></div>
+                <div class="qual-item"><span class="qual-year">2013</span><span class="qual-text">BE in Civil Engineering</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="founder-card">
+              <div class="founder-card-header">
+                <div class="founder-photo-wrap">
+                  <img src="images/owner2.jpg" alt="Vijetha G Raju" class="founder-photo" />
+                </div>
+                <div class="founder-card-intro">
+                  <h2 class="founder-card-name">Vijetha G Raju</h2>
+                  <p class="founder-role">Principal Project Controller &amp; Director</p>
+                  <div class="founder-contact">
+                    <a href="mailto:vijetharaju.g@gmail.com" class="founder-link">&#9993; vijetharaju.g@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <p class="section-text mt-3">Over twelve years of professional experience in construction, with nearly eight years of commercial and project control experience in New Zealand on complex infrastructure projects — always focused on improving lives and benefiting the wider community.</p>
+              <h6 class="timeline-heading">Experience</h6>
+              <div class="founder-quals">
+                <div class="qual-item"><span class="qual-year">2022–25</span><span class="qual-text">Principal Project Controller, Mott MacDonald NZ</span></div>
+                <div class="qual-item"><span class="qual-year">2018–22</span><span class="qual-text">Senior Cost Engineer, Ghella–Abergeldie Harker JV</span></div>
+                <div class="qual-item"><span class="qual-year">2016–17</span><span class="qual-text">Assistant Engineer, Panchayat Raj Dept., India</span></div>
+                <div class="qual-item"><span class="qual-year">2013–14</span><span class="qual-text">Site Engineer, Sankalp Constructions</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: ABOUT -->
+  <div id="panel-about" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <span class="section-label">Who We Are</span>
+        <h1>About Us</h1>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">A Strong Family Business</h2>
+          <p class="section-text">We are a strong family business dedicated to creating happy places for quality living. Building a lasting legacy for the community, we bring together local and overseas expertise to design and deliver functional homes and infrastructures that stand the test of time.</p>
+          <p class="section-text">Rooted in community values and driven by innovation, every project we undertake is a commitment to the people who will live, work, and grow within the spaces we create.</p>
+          <div class="stats-row">
+            <div class="stat-item"><h3>100+</h3><p>Projects Delivered</p></div>
+            <div class="stat-item"><h3>12+</h3><p>Years Experience</p></div>
+            <div class="stat-item"><h3>500+</h3><p>Happy Families</p></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-img-block">
+            <img src="images/about.jpg" alt="Guru Gruha Consultants" class="about-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PURPOSE -->
+  <div id="panel-purpose" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <span class="section-label">Why We Do It</span>
+        <h1>Our Purpose</h1>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="text-center mb-5"><h2 class="section-title">Better Places for Better Living</h2></div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="purpose-card h-100">
+            <div class="purpose-icon">&#127968;</div>
+            <h4>Our Mission</h4>
+            <p>Our mission is to create functional spaces to suit your daily life — smarter, sustainable, and cost-effective planning tailored specifically to you.</p>
+            <p>We discuss your needs, lifestyle, and requirements and design to align it perfectly, so you can find comfort in your own home without regret.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="purpose-card h-100">
+            <div class="purpose-icon">&#127981;</div>
+            <h4>Design for All Generations</h4>
+            <p>Living in a heritage building, we understand your need for cultural elements while embracing a modern touch — design for all generations.</p>
+            <p>Sustainability and cost-effectiveness are at the core. Every plan complies with regulations while effectively utilising every square foot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PROJECTS -->
+  <div id="panel-projects" class="page-panel panel-scrollable" style="background: var(--dark-bg, #111820);">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <span class="section-label">What We Do</span>
+        <h1>Our Projects</h1>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="text-center mb-5"><p class="text-white-50">Residential, commercial design and planning — better places for better living.</p></div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3"><div class="project-card"><div class="project-icon">&#127968;</div><h5>Residential</h5></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="project-card"><div class="project-icon">&#127970;</div><h5>Commercial</h5></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="project-card"><div class="project-icon">&#127981;</div><h5>Industrial</h5></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="project-card"><div class="project-icon">&#128507;</div><h5>Bridges</h5></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="project-card"><div class="project-icon">&#9968;</div><h5>Underground</h5></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="project-card"><div class="project-icon">&#128269;</div><h5>Inspections</h5></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="project-card"><div class="project-icon">&#128295;</div><h5>Repairs</h5></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="project-card"><div class="project-icon">&#128202;</div><h5>Seismic</h5></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PRINCIPLES -->
+  <div id="panel-principles" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <span class="section-label">How We Do It</span>
+        <h1>Our Principles</h1>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="principle-card">
+            <div class="principle-num">01</div>
+            <h4>Commitment</h4>
+            <p>We hear you! We involve you! Customer vision is our top priority. We engage from start to end — dedicated to delivering high-standard designs on time and exceeding expectations.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="principle-card">
+            <div class="principle-num">02</div>
+            <h4>Quality</h4>
+            <p>Your dream home, to be a masterpiece! Designs complying with standards, pleasing aesthetics, and strong structural elements. Generations can comfortably enjoy the spaces.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="principle-card">
+            <div class="principle-num">03</div>
+            <h4>Value for Money</h4>
+            <p>Design simplicity — avoiding unnecessary elements so you stay within budget. With efficient design, every dollar you spend yields optimum benefits.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="principle-card">
+            <div class="principle-num">04</div>
+            <h4>Functionality &amp; Sustainability</h4>
+            <p>Smarter spaces designed to serve your lifestyle today and tomorrow. Sustainability and functionality are at the core of every decision we make.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: FOUNDERS -->
+  <div id="panel-founders" class="page-panel bg-light panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <span class="section-label">The Expertise Behind the Vision</span>
+        <h1>Our Founders</h1>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <div class="founder-card">
+            <div class="founder-card-header">
+              <div class="founder-photo-wrap">
+                <img src="images/owner.jpg" alt="Sunil Nataraj" class="founder-photo" />
+              </div>
+              <div class="founder-card-intro">
+                <h2 class="founder-card-name">Dr. Sunil Nataraj
+
+                </h2>
+                <p class="founder-role">Structural Engineer &amp; Director</p>
+                <div class="founder-contact">
+                  <a href="mailto:sunilraj7851@gmail.com" class="founder-link">&#9993; sunilraj7851@gmail.com</a>
+                  <a href="tel:+919606957901" class="founder-link">&#128222; +91 9606957901</a>
+                </div>
+              </div>
+            </div>
+            <p class="section-text mt-3">With 10+ years of experience spanning industry consultancies and advanced structural research, Sunil translates the latest advances in structural behaviour into practice — going beyond standard design codes to deliver solutions that are technically rigorous and built to last.</p>
+            <h6 class="timeline-heading">Qualifications</h6>
+            <div class="founder-quals mb-4">
+              <div class="qual-item"><span class="qual-year">2021</span><span class="qual-text">PhD in Structural Engineering</span></div>
+              <div class="qual-item"><span class="qual-year">2015</span><span class="qual-text">MTech in Structural Engineering</span></div>
+              <div class="qual-item"><span class="qual-year">2013</span><span class="qual-text">BE in Civil Engineering</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="founder-card">
+            <div class="founder-card-header">
+              <div class="founder-photo-wrap">
+                <img src="images/owner2.jpg" alt="Vijetha G Raju" class="founder-photo" />
+              </div>
+              <div class="founder-card-intro">
+                <h2 class="founder-card-name">Vijetha G Raju</h2>
+                <p class="founder-role">Principal Project Controller &amp; Director</p>
+                <div class="founder-contact">
+                  <a href="mailto:vijetharaju.g@gmail.com" class="founder-link">&#9993; vijetharaju.g@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <p class="section-text mt-3">Over twelve years of professional experience in construction, with nearly eight years of commercial and project control experience in New Zealand on complex infrastructure projects — always focused on improving lives and benefiting the wider community.</p>
+            <h6 class="timeline-heading">Experience</h6>
+            <div class="founder-quals mb-4">
+              <div class="qual-item"><span class="qual-year">2022–25</span><span class="qual-text">Principal Project Controller, Mott MacDonald NZ</span></div>
+              <div class="qual-item"><span class="qual-year">2018–22</span><span class="qual-text">Senior Cost Engineer, Ghella–Abergeldie Harker JV</span></div>
+              <div class="qual-item"><span class="qual-year">2016–17</span><span class="qual-text">Assistant Engineer, Panchayat Raj Dept., India</span></div>
+              <div class="qual-item"><span class="qual-year">2013–14</span><span class="qual-text">Site Engineer, Sankalp Constructions</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: CONTACT -->
+  <div id="panel-contact" class="page-panel bg-accent panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <span class="section-label">Get In Touch</span>
+        <h1>Let's Build Your Dream</h1>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-4">
+          <h3 class="text-white mb-4" style="font-family:'Playfair Display',serif;">Reach Us Directly</h3>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">&#9993;</span>
+            <div><p class="contact-info-label">Email — Sunil</p><a href="mailto:sunilraj7851@gmail.com" class="contact-info-val">sunilraj7851@gmail.com</a></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">&#9993;</span>
+            <div><p class="contact-info-label">Email — Vijetha</p><a href="mailto:vijetharaju.g@gmail.com" class="contact-info-val">vijetharaju.g@gmail.com</a></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">&#128222;</span>
+            <div><p class="contact-info-label">Phone</p><a href="tel:+919606957901" class="contact-info-val">+91 9606957901</a></div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">&#128205;</span>
+            <div><p class="contact-info-label">Location</p><p class="contact-info-val">New Sayyaji Rao Road, Mysuru</p></div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <p class="text-white opacity-75 mb-4">Tell us about your project and we will get back to you shortly.</p>
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Your Name" required /></div>
+              <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Your Email" required /></div>
+              <div class="col-md-6"><input type="tel" name="phone" class="form-control" placeholder="Phone Number" /></div>
+              <div class="col-md-6">
+                <select name="project_type" class="form-control">
+                  <option value="" disabled selected>Project Type</option>
+                  <option>Residential</option><option>Commercial</option><option>Industrial</option>
+                  <option>Bridges</option><option>Underground</option><option>Inspections</option>
+                  <option>Repairs</option><option>Seismic</option>
+                </select>
+              </div>
+              <div class="col-12"><textarea name="message" class="form-control" rows="4" placeholder="Tell us about your project..."></textarea></div>
+              <div class="col-12"><button type="submit" class="btn btn-submit">Send Message</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer panel-footer" id="siteFooter" style="display:none;">
+    <div class="container text-center">
+      <p class="mb-1"><strong>Guru Gruha Consultants</strong> &mdash; Creating Happy Places for Quality Living</p>
+      <p class="footer-copy">&copy; 2026 Guru Gruha Consultants. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function showPanel(name) {
+      document.querySelectorAll('.page-panel').forEach(p => p.classList.remove('active'));
+      var target = document.getElementById('panel-' + name);
+      if (target) { target.classList.add('active'); target.scrollTop = 0; }
+      document.querySelectorAll('.nav-tab').forEach(a => a.classList.remove('active'));
+      var activeLink = document.querySelector('[data-panel="' + name + '"]');
+      if (activeLink) activeLink.classList.add('active');
+      document.getElementById('siteFooter').style.display = (name === 'home') ? 'none' : 'block';
+      var collapse = document.getElementById('navbarNav');
+      if (collapse.classList.contains('show')) {
+        var bsCollapse = bootstrap.Collapse.getInstance(collapse);
+        if (bsCollapse) bsCollapse.hide();
+      }
+    }
+    document.querySelectorAll('.nav-tab').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        showPanel(this.dataset.panel);
+      });
+    });
+    showPanel('home');
+  </script>
+</body>
+</html>
