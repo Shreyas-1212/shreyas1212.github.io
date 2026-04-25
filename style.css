@@ -113,7 +113,7 @@ body.tab-layout {
   background: url('images/hero2.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   padding: 60px 0 60px;
 }
 
@@ -408,7 +408,7 @@ img { max-width: 100%; height: auto; }
 .about-img-block.about-story {
   min-height: 100vh;
   background: url('images/hero2.jpg') center/cover no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -870,7 +870,7 @@ img { max-width: 100%; height: auto; }
   width: 100vw;
   min-height: 100vh;
   background: url('images/about-story.jpg') center/cover no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -945,7 +945,7 @@ img { max-width: 100%; height: auto; }
   width: 100vw;
   min-height: 100vh;
   background: url('images/about-story2.jpg') center/cover no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
