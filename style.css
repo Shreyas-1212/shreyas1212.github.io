@@ -1478,6 +1478,19 @@ img { max-width: 100%; height: auto; }
   }
 
   .panel-page-hero { min-height: 150px; }
+
+  /* Tablet text reductions */
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-text {
+    font-size: 0.9rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.7rem;
+  }
 }
 
 /* ── Mobile (575px and below) ─────────────── */
@@ -1609,4 +1622,33 @@ img { max-width: 100%; height: auto; }
   }
 
   .contact-form { max-width: 100%; }
+
+  /* ── About page mobile adjustments ──── */
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-text {
+    font-size: 0.85rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat-item p {
+    font-size: 0.7rem;
+  }
+
+  .about-img-block {
+    margin: 0 !important;
+  }
+
+  .about-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+  }
 }
