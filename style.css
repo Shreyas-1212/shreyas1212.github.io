@@ -216,7 +216,12 @@ img { max-width: 100%; height: auto; }
   text-transform: uppercase;
 }
 
-#mainNav .nav-link:hover {
+#mainNav .nav-link:not(.active):hover {
+  color: var(--gold);
+}
+
+#mainNav .nav-link.active,
+#mainNav .nav-link.active:hover {
   color: var(--gold);
 }
 
