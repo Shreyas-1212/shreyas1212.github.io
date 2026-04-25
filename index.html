@@ -22,7 +22,7 @@
           <li class="nav-item"><a class="nav-link nav-tab active" href="#" data-panel="home">Home</a></li>
           <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="about">About Us</a></li>
           <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="founders">Our Founders</a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#" data-panel="team">Our Team</a></li>
           <li class="nav-item"><a class="nav-link nav-tab btn-contact" href="#" data-panel="contact">Contact Us</a></li>
         </ul>
       </div>
@@ -37,20 +37,20 @@
       <div class="container hero-content text-center text-white">
         <img src="images/logo.png" alt="Guru Gruha Consultants" class="hero-logo mb-3" />
         <p class="hero-tagline">Trusted design for modern living</p>
-        <h1>Quality homes, smart workspaces<br />and resilient infrastructure</h1>
+        <h1>Creating happy places for meaningful living</h1>
         <p class="hero-sub">Residential &bull; Commercial &bull; Industrial &bull; Infrastructure</p>
         <div class="hero-cta-row">
           <a href="#" class="btn btn-hero" onclick="showPanel('about'); return false;">Learn About Us</a>
           <a href="#" class="btn btn-hero-outline" onclick="showPanel('contact'); return false;">Contact Info</a>
         </div>
       </div>
-      <p class="hero-scroll-hint">&#8595; Scroll to meet our founders</p>
+      <p class="hero-scroll-hint">&#8595; Scroll to meet our team</p>
     </div>
-    <!-- Founder cards on home -->
-    <div class="home-founders-strip">
+    <!-- Team cards on home -->
+    <div class="home-team-strip">
       <div class="container">
         <div class="text-center mb-4">
-          <span class="section-label">Meet Our Founders</span>
+          <span class="section-label">Meet Our Team</span>
         </div>
         <div class="row g-4 justify-content-center">
           <div class="col-lg-5">
@@ -61,9 +61,10 @@
                 </div>
                 <div class="founder-card-intro">
                   <h2 class="founder-card-name">Dr. Sunil Nataraj</h2>
-                  <p class="founder-role">Structural Engineer &amp; Director</p>
+                  <p class="founder-role">Structural Consultant &amp; Director</p>
+                  <p class="founder-credentials">B.E., M.Tech., Ph.D. (U. Auckland, NZ) MIE, MEngNZ</p>
                   <div class="founder-contact">
-                    <a href="mailto:sunilraj7851@gmail.com" class="founder-link">&#9993; sunilraj7851@gmail.com</a>
+                    <a href="mailto:info@gurugruha.com" class="founder-link">&#9993; info@gurugruha.com</a>
                     <a href="tel:+919606957901" class="founder-link">&#128222; +91 9606957901</a>
                   </div>
                 </div>
@@ -71,9 +72,9 @@
               <p class="section-text mt-3">With 10+ years of experience spanning industry consultancies and advanced structural research, Sunil translates the latest advances in structural behaviour into practice — going beyond standard design codes to deliver solutions that are technically rigorous and built to last.</p>
               <h6 class="timeline-heading">Qualifications</h6>
               <div class="founder-quals">
-                <div class="qual-item"><span class="qual-year">2021</span><span class="qual-text">PhD in Structural Engineering</span></div>
-                <div class="qual-item"><span class="qual-year">2015</span><span class="qual-text">MTech in Structural Engineering</span></div>
-                <div class="qual-item"><span class="qual-year">2013</span><span class="qual-text">BE in Civil Engineering</span></div>
+                <div class="qual-item"><span class="qual-text">PhD in Structural Engineering</span></div>
+                <div class="qual-item"><span class="qual-text">MTech in Structural Engineering</span></div>
+                <div class="qual-item"><span class="qual-text">BE in Civil Engineering</span></div>
               </div>
             </div>
           </div>
@@ -87,17 +88,17 @@
                   <h2 class="founder-card-name">Vijetha G Raju</h2>
                   <p class="founder-role">Principal Project Controller &amp; Director</p>
                   <div class="founder-contact">
-                    <a href="mailto:vijetharaju.g@gmail.com" class="founder-link">&#9993; vijetharaju.g@gmail.com</a>
+                    <a href="mailto:info@gurugruha.com" class="founder-link">&#9993; info@gurugruha.com</a>
                   </div>
                 </div>
               </div>
               <p class="section-text mt-3">Over twelve years of professional experience in construction, with nearly eight years of commercial and project control experience in New Zealand on complex infrastructure projects — always focused on improving lives and benefiting the wider community.</p>
               <h6 class="timeline-heading">Experience</h6>
               <div class="founder-quals">
-                <div class="qual-item"><span class="qual-year">2022–25</span><span class="qual-text">Principal Project Controller, Mott MacDonald NZ</span></div>
-                <div class="qual-item"><span class="qual-year">2018–22</span><span class="qual-text">Senior Cost Engineer, Ghella–Abergeldie Harker JV</span></div>
-                <div class="qual-item"><span class="qual-year">2016–17</span><span class="qual-text">Assistant Engineer, Panchayat Raj Dept., India</span></div>
-                <div class="qual-item"><span class="qual-year">2013–14</span><span class="qual-text">Site Engineer, Sankalp Constructions</span></div>
+                <div class="qual-item"><span class="qual-text">Principal Project Controller, Mott MacDonald NZ</span></div>
+                <div class="qual-item"><span class="qual-text">Senior Cost Engineer, Ghella–Abergeldie Harker JV</span></div>
+                <div class="qual-item"><span class="qual-text">Assistant Engineer, Panchayat Raj Dept., India</span></div>
+                <div class="qual-item"><span class="qual-text">Site Engineer, Sankalp Constructions</span></div>
               </div>
             </div>
           </div>
@@ -135,35 +136,69 @@
         </div>
       </div>
       <div class="row g-4 mt-5">
-        <div class="col-lg-6">
+        <div class="col-12">
           <span class="section-label">Our Purpose</span>
           <h3 class="section-title">Design that supports your life</h3>
           <p class="section-text">We create functional spaces that fit your daily needs, balance comfort with efficiency, and support long-term value. Every plan is tailored to your lifestyle and built to feel welcoming for generations.</p>
+          <div class="row g-4 mt-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="purpose-card">
+                <img src="images/hero.jpg" alt="Residential design" />
+                <h4>Residential Comfort</h4>
+                <p>Thoughtful planning for homes that are comfortable, durable and welcoming.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="purpose-card">
+                <img src="images/owner.jpg" alt="Commercial design" />
+                <h4>Commercial Performance</h4>
+                <p>Workspaces designed for productivity, flexibility and long-term value.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="purpose-card">
+                <img src="images/owner2.jpg" alt="Industrial design" />
+                <h4>Industrial Strength</h4>
+                <p>Robust solutions for infrastructure, industrial systems and heavy work.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="purpose-card">
+                <img src="images/logo.png" alt="Infrastructure design" />
+                <h4>Future Ready</h4>
+                <p>Designs built to endure change, stay efficient, and support tomorrow’s needs.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-12">
           <span class="section-label">Our Principles</span>
           <h3 class="section-title">How we deliver work that lasts</h3>
-          <div class="row g-3">
-            <div class="col-sm-6">
+          <div class="row g-4 mt-4">
+            <div class="col-md-6">
               <div class="principle-card">
+                <img src="images/hero.jpg" alt="Customer Focus" />
                 <h4>Customer Focus</h4>
                 <p>We listen closely and keep you involved from concept to completion.</p>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <div class="principle-card">
+                <img src="images/owner.jpg" alt="Quality Delivery" />
                 <h4>Quality Delivery</h4>
                 <p>Every design balances aesthetics, strength, and long-term performance.</p>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <div class="principle-card">
+                <img src="images/owner2.jpg" alt="Cost Smart" />
                 <h4>Cost Smart</h4>
                 <p>We avoid over-design and keep your project efficient and budget-aware.</p>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <div class="principle-card">
+                <img src="images/logo.png" alt="Future Ready" />
                 <h4>Future Ready</h4>
                 <p>We plan spaces that are sustainable, functional and built for tomorrow.</p>
               </div>
@@ -241,13 +276,13 @@
     </div>
   </div>
 
-  <!-- PANEL: FOUNDERS -->
-  <div id="panel-founders" class="page-panel bg-light panel-scrollable">
+  <!-- PANEL: TEAM -->
+  <div id="panel-team" class="page-panel bg-light panel-scrollable">
     <div class="panel-page-hero">
       <div class="page-hero-overlay"></div>
       <div class="container text-center text-white page-hero-content">
         <span class="section-label">The Expertise Behind the Vision</span>
-        <h1>Our Founders</h1>
+        <h1>Our Team</h1>
       </div>
     </div>
     <div class="container section-pad">
@@ -321,11 +356,7 @@
           <h3 class="text-white mb-4" style="font-family:'Playfair Display',serif;">Reach Us Directly</h3>
           <div class="contact-info-item">
             <span class="contact-info-icon">&#9993;</span>
-            <div><p class="contact-info-label">Email — Sunil</p><a href="mailto:sunilraj7851@gmail.com" class="contact-info-val">sunilraj7851@gmail.com</a></div>
-          </div>
-          <div class="contact-info-item">
-            <span class="contact-info-icon">&#9993;</span>
-            <div><p class="contact-info-label">Email — Vijetha</p><a href="mailto:vijetharaju.g@gmail.com" class="contact-info-val">vijetharaju.g@gmail.com</a></div>
+            <div><p class="contact-info-label">Email</p><a href="mailto:info@gurugruha.com" class="contact-info-val">info@gurugruha.com</a></div>
           </div>
           <div class="contact-info-item">
             <span class="contact-info-icon">&#128222;</span>
