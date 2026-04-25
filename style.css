@@ -106,8 +106,8 @@ body.tab-layout {
   50%       { transform: translateY(6px); }
 }
 
-/* Founders strip on home page */
-.home-founders-strip {
+/* Home team strip */
+.home-team-strip {
   position: relative;
   z-index: 1;
   background: #f5f2ed;
@@ -438,13 +438,13 @@ img { max-width: 100%; height: auto; }
 
 /* ── Founder Cards (two-up layout) ───────── */
 .founder-card {
-  background: linear-gradient(180deg, #ffffff 0%, #fcfbf7 100%);
-  border: 1px solid rgba(201, 151, 58, 0.14);
+  background: #fff;
+  border: 1px solid rgba(201, 151, 58, 0.18);
   border-radius: calc(var(--radius) * 1.1);
   padding: 2rem;
-  box-shadow: 0 22px 48px rgba(17, 24, 34, 0.12);
+  box-shadow: 0 32px 65px rgba(17, 24, 34, 0.15);
   height: 100%;
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  transition: box-shadow var(--transition), border-color var(--transition);
 }
 
 .founder-card:hover {
@@ -1180,7 +1180,7 @@ img { max-width: 100%; height: auto; }
 
   .founder-card-name { font-size: 1.2rem; }
 
-  .home-founders-strip { padding: 40px 0; }
+  .home-team-strip { padding: 40px 0; }
 
   .contact-form { max-width: 100%; }
 }
