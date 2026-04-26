@@ -141,10 +141,20 @@ body.tab-layout {
   background: url('images/expertise-bg.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-color: #1c2b3a;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
+  position: relative;
+}
+
+.expertise-header-viewport::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: -1;
 }
 
 .expertise-header-viewport .container {
@@ -166,13 +176,23 @@ body.tab-layout {
   justify-content: center;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-color: #1c2b3a;
   transition: all 0.6s ease-in-out;
   opacity: 1;
   transform: translateY(0);
   animation: fadeInUp 0.8s ease-out;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
+}
+
+.expertise-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .expertise-item:last-child {
@@ -182,7 +202,8 @@ body.tab-layout {
 .expertise-item-heritage {
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-color: #1c2b3a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -190,6 +211,16 @@ body.tab-layout {
   align-items: center;
   padding: 0;
   overflow: hidden;
+  position: relative;
+}
+
+.expertise-item-heritage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .heritage-title-top {
@@ -201,6 +232,8 @@ body.tab-layout {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .heritage-description-bottom {
@@ -208,10 +241,13 @@ body.tab-layout {
   padding: 4rem 2rem;
   max-width: 900px;
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .expertise-overlay {
   position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1200px;
   padding: 4rem 3rem;
