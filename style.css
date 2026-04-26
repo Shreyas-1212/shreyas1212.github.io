@@ -2418,4 +2418,23 @@ img { max-width: 100%; height: auto; }
     font-size: 0.85rem;
     line-height: 1.6;
   }
+
+  /* ── About page mobile adjustments ──── */
+  .about-img-block {
+    margin: 0 !important;
+    position: relative;
+    height: auto;
+    min-height: 250px;
+    display: block;
+  }
+
+  .about-img {
+    display: block !important;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
 }
