@@ -1,4 +1,4 @@
-﻿at<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -35,8 +35,7 @@
     <!-- Hero text — full viewport height -->
     <div class="hero-viewport">
       <div class="container hero-content text-center text-white">
-        <img src="images/logo.jpg" alt="Guru Gruha Consultants" class="hero-logo mb-3" />
-        <p class="hero-tagline">Trusted design for modern living</p>
+        <img src="images/logo.png" alt="Guru Gruha Consultants" class="hero-logo mb-3" />
         <h1>Designing legacy spaces for happy living</h1>
         <p class="hero-sub">Residential &bull; Commercial &bull; Industrial &bull; Infrastructure</p>
         <div class="hero-cta-row">
@@ -58,18 +57,16 @@
         <!-- Expertise Item 1: Architectural Planning -->
         <div class="expertise-item expertise-item-split" style="background-image: url('images/expertise-bg.jpg');">
           <div class="expertise-overlay">
-            <div class="row g-4 align-items-center w-100">
-              <div class="col-lg-7">
+            <div class="expertise-row">
+              <div class="expertise-col-text">
                 <div class="expertise-content">
                   <h3 class="expertise-heading">ARCHITECTURAL PLANNING</h3>
                   <div class="expertise-divider"></div>
                   <p class="expertise-description">We align our purpose and principles to create beautiful and functional residential homes, commercial spaces and infrastructures to suit everyday life. Our careful planning ensures effective space utilisation, smart layouts to boost sustainability. We plan according to Vastu principles to align with natural elements like wind and sun which helps create a space filled with positive energy. We provide clear and detailed 2D floor plans, realistic 3D views with rendering, so you get a feel of your building space before you start construction.</p>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <div class="expertise-image-right">
-                  <img src="images/expertise-architectural.jpg" alt="Architectural Planning" />
-                </div>
+              <div class="expertise-col-image">
+                <img src="images/expertise-architectural.jpg" alt="Architectural Planning" class="expertise-split-img" />
               </div>
             </div>
           </div>
@@ -88,29 +85,28 @@
 
         <!-- Expertise Item 3: Heritage Structures -->
         <div class="expertise-item expertise-item-heritage" style="background-image: url('images/expertise-heritage.jpeg');">
-          <div class="heritage-title-top">
-            <h3 class="expertise-heading">HERITAGE STRUCTURES – STRUCTURAL INVESTIGATION</h3>
-            <div class="expertise-divider"></div>
-          </div>
-          <div class="heritage-description-bottom">
-            <p class="expertise-description">We provide expert structural condition assessment of existing and heritage structures, where we evaluate structural deficiencies and recommend appropriate repair and retrofitting methodologies based on detailed technical investigations.</p>
+          <div class="expertise-overlay">
+            <div class="expertise-content">
+              <h3 class="expertise-heading">HERITAGE STRUCTURES – STRUCTURAL INVESTIGATION</h3>
+              <div class="expertise-divider"></div>
+              <p class="expertise-description">We provide expert structural condition assessment of existing and heritage structures, where we evaluate structural deficiencies and recommend appropriate repair and retrofitting methodologies based on detailed technical investigations.</p>
+            </div>
           </div>
         </div>
 
         <!-- Expertise Item 4: Commercial Oversight -->
-        <div class="expertise-item expertise-item-dual-images">
-          <div class="expertise-overlay expertise-overlay-dual">
-            <div class="expertise-content expertise-content-dual">
-              <h3 class="expertise-heading">COMPLETE COMMERCIAL OVERSIGHT AND COST MANAGEMENT</h3>
-              <div class="expertise-divider"></div>
-              <p class="expertise-description">Beyond design, we provide the commercial leadership to suit your project needs. We maximise project value through strategic project management and controls. Develop project specific processes, procedures, and control measures with best practices to ensure high quality project delivery. We leverage expert skill and AI automation to drive project performance. While we manage complex negotiations and cost optimization, you focus on construction.</p>
-            </div>
-            <div class="expertise-images-wrapper">
-              <div class="expertise-image-dual">
-                <img src="images/expertise-commercial-1.png" alt="Commercial Oversight 1" />
+        <div class="expertise-item expertise-item-split" style="background-image: url('images/expertise-bg.jpg');">
+          <div class="expertise-overlay">
+            <div class="expertise-row">
+              <div class="expertise-col-text">
+                <div class="expertise-content">
+                  <h3 class="expertise-heading">COMPLETE COMMERCIAL OVERSIGHT AND COST MANAGEMENT</h3>
+                  <div class="expertise-divider"></div>
+                  <p class="expertise-description">Beyond design, we provide the commercial leadership to suit your project needs. We maximise project value through strategic project management and controls. Develop project specific processes, procedures, and control measures with best practices to ensure high quality project delivery. We leverage expert skill and AI automation to drive project performance. While we manage complex negotiations and cost optimization, you focus on construction.</p>
+                </div>
               </div>
-              <div class="expertise-image-dual">
-                <img src="images/expertise-commercial-2.png" alt="Commercial Oversight 2" />
+              <div class="expertise-col-image">
+                <img src="images/expertise-commercial-1.png" alt="Commercial Oversight" class="expertise-split-img" />
               </div>
             </div>
           </div>
@@ -214,105 +210,115 @@
       </div>
     </div>
 
-    <!-- Projects Gallery: Single Image with Text -->
-    <div class="projects-gallery" style="background-image: url('images/projects-gallery-2.jpeg');">
-      <div class="gallery-overlay">
-        <div class="gallery-content">
-          <h2 class="gallery-title">Heritage Structures – Structural Investigation</h2>
-          <p class="gallery-location">India and New Zealand</p>
-          <p class="gallery-text">Our team led an extensive review of structural drawings and on-site non-destructive testing of existing RC buildings to understand typical construction practices and highlight potential seismic vulnerabilities. We developed a detailed seismic assessment methodology and demonstrated its successful application across multiple projects. Our team recommends appropriate repair and retrofitting methodologies based on these detailed technical investigations.</p>
+    <!-- Projects Carousel Container -->
+    <div class="container section-pad">
+      <div class="projects-carousel-grid">
+        
+        <!-- Project Card 1: Heritage Structures -->
+        <div class="project-card" data-project-id="heritage" onclick="showPanel('project-heritage'); return false;">
+          <div class="carousel-container">
+            <div class="carousel-wrapper">
+              <img src="images/project-heritage-cover.jpeg" alt="Heritage Structures" class="carousel-image" />
+            </div>
+          </div>
+          <div class="project-card-info">
+            <div class="carousel-title-link">
+              <h3 class="carousel-title">Heritage Structures - Structural Investigation</h3>
+              <p class="carousel-location">India and New Zealand</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Project 1: Residential, Commercial and Industrial Buildings -->
-    <div class="project-item" style="background-image: url('images/project-residential.jpg');">
-      <div class="project-overlay">
-        <div class="project-title-box">
-          <h2 class="project-title">Residential, Commercial and Industrial Buildings</h2>
-          <p class="project-location">India</p>
+        <!-- Project Card 2: Residential, Commercial and Industrial Buildings -->
+        <div class="project-card" data-project-id="project-1" onclick="showPanel('project-1'); return false;">
+          <div class="carousel-container">
+            <div class="carousel-wrapper">
+              <img src="images/project-1-cover.jpeg" alt="Residential Buildings" class="carousel-image" />
+            </div>
+          </div>
+          <div class="project-card-info">
+            <div class="carousel-title-link">
+              <h3 class="carousel-title">Residential, Commercial and Industrial Buildings</h3>
+              <p class="carousel-location">India</p>
+            </div>
+          </div>
         </div>
-        <div class="project-description-box">
-          <p class="project-description">Our team delivered high-quality, Vastu-compliant 2D floor plans and realistic 3D renderings for various projects across India. We produced precise structural designs from initial concept to construction-ready blueprints while managing all design revisions and providing dedicated on-site investigation during the construction phase.
-Beyond design, our team prepared detailed project estimations and handled contract management while liaising with architects, owners, and subcontractors. We provided comprehensive rate analysis, ensured project profitability and quality compliance via regular site inspections, and implemented cost-saving strategies through resource and material optimization. Our team collaborated closely with project partners to ensure on-time delivery according to technical specifications.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 2: Wastewater Tunnel Project and Underground Retaining Structures -->
-    <div class="project-item" style="background-image: url('images/project-wastewater.jpeg');">
-      <div class="project-overlay">
-        <div class="project-title-box">
-          <h2 class="project-title">Wastewater Tunnel Project and Underground Retaining Structures</h2>
-          <p class="project-location">Auckland, NZ</p>
+        <!-- Project Card 3: Wastewater Tunnel -->
+        <div class="project-card" data-project-id="project-2" onclick="showPanel('project-2'); return false;">
+          <div class="carousel-container">
+            <div class="carousel-wrapper">
+              <img src="images/project-2-cover.jpeg" alt="Wastewater Tunnel" class="carousel-image" />
+            </div>
+          </div>
+          <div class="project-card-info">
+            <div class="carousel-title-link">
+              <h3 class="carousel-title">Wastewater Tunnel Project</h3>
+              <p class="carousel-location">Auckland, NZ</p>
+            </div>
+          </div>
         </div>
-        <div class="project-description-box">
-          <p class="project-description">The Central Interceptor is New Zealand's largest wastewater tunnel project, consisting of a 14.7 km main tunnel, multiple shafts, a major pump station, and substantial wastewater network infrastructure. Our team contributed to various phases of design, such as preliminary design (PD) and detailed design (DD), addressed design change requests (DCR), and assisted with construction phase support (CPS). We were involved in the modelling, analysis, and design of temporary works for control chambers and pump stations, temporary and permanent works for shaft lining and manhole structures, and the design of box culverts and retaining structures. Our team also drove end-to-end procurement, commercial leadership, financial management, cost-optimization, schedule management, and complex claims negotiation.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 3: Airport Domestic Terminal -->
-    <div class="project-item" style="background-image: url('images/project-airport.jpeg');">
-      <div class="project-overlay">
-        <div class="project-title-box">
-          <h2 class="project-title">Airport Domestic Terminal</h2>
-          <p class="project-location">Auckland, NZ</p>
+        <!-- Project Card 4: Airport Domestic Terminal -->
+        <div class="project-card" data-project-id="project-3" onclick="showPanel('project-3'); return false;">
+          <div class="carousel-container">
+            <div class="carousel-wrapper">
+              <img src="images/project-3-cover.jpeg" alt="Airport Terminal" class="carousel-image" />
+            </div>
+          </div>
+          <div class="project-card-info">
+            <div class="carousel-title-link">
+              <h3 class="carousel-title">Airport Domestic Terminal</h3>
+              <p class="carousel-location">Auckland, NZ</p>
+            </div>
+          </div>
         </div>
-        <div class="project-description-box">
-          <p class="project-description">A brand-new domestic terminal, integrated into the current international terminal, is a key feature of the programme, delivering the gateway Auckland and New Zealand need. Our team refined project delivery and commercial performance by managing end-to-end claims, forecasting, and schedule management. Additionally, our team led a digital transformation using AI-driven tools like Power BI to automate reporting and provide real-time financial insights.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 4: Retaining Wall Structure -->
-    <div class="project-item" style="background-image: url('images/project-retaining-wall.jpg');">
-      <div class="project-overlay">
-        <div class="project-title-box">
-          <h2 class="project-title">Retaining Wall Structure</h2>
-          <p class="project-location">NSW, Australia</p>
+        <!-- Project Card 5: Retaining Wall Structure -->
+        <div class="project-card" data-project-id="project-4" onclick="showPanel('project-4'); return false;">
+          <div class="carousel-container">
+            <div class="carousel-wrapper">
+              <img src="images/project-4-cover.jpeg" alt="Retaining Wall" class="carousel-image" />
+            </div>
+          </div>
+          <div class="project-card-info">
+            <div class="carousel-title-link">
+              <h3 class="carousel-title">Underground Retaining Structures</h3>
+              <p class="carousel-location">India, New Zealand, Australia</p>
+            </div>
+          </div>
         </div>
-        <div class="project-description-box">
-          <p class="project-description">This project involved slope remediation design for two retaining walls along a mountainous road in NSW after retained slopes along Jenolan Caves Road at Hampton failed during heavy rainfall. Our team was involved in the design and internal peer review of the piled barrier retaining wall structure.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 5: Footbridge and Vehicular Bridge -->
-    <div class="project-item" style="background-image: url('images/project-footbridge.jpeg');">
-      <div class="project-overlay">
-        <div class="project-title-box">
-          <h2 class="project-title">Footbridge and Vehicular Bridge</h2>
-          <p class="project-location">Hong Kong</p>
+        <!-- Project Card 6: Footbridge and Vehicular Bridge -->
+        <div class="project-card" data-project-id="project-5" onclick="showPanel('project-5'); return false;">
+          <div class="carousel-container">
+            <div class="carousel-wrapper">
+              <img src="images/project-5-cover.jpeg" alt="Footbridge" class="carousel-image" />
+            </div>
+          </div>
+          <div class="project-card-info">
+            <div class="carousel-title-link">
+              <h3 class="carousel-title">Footbridges and Vehicular Bridges</h3>
+              <p class="carousel-location">Hong Kong</p>
+            </div>
+          </div>
         </div>
-        <div class="project-description-box">
-          <p class="project-description">This project consists of a footbridge connecting Amoy Plaza and the East Kowloon Cultural Centre (EKCC) across Ngau Tau Kok Road and Highway Flyover no. K56. The Amoy Plaza footbridge structure consists of a steel truss bridge. Additionally, the redevelopment of Siu Ho Depot provides infrastructure and enabling works for future residential and public facilities. Our team was involved in the design of steel structures and steel connections for five link bridges (footbridges). In addition, our team handled the modelling and analysis of the carriage bridge at Tai Ho Interchange and prepared the necessary design calculations and reports.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 6: Bridge Structural Assessment -->
-    <div class="project-item" style="background-image: url('images/about-story.jpg');">
-      <div class="project-overlay">
-        <div class="project-title-box">
-          <h2 class="project-title">Bridge Structural Assessment</h2>
-          <p class="project-location">Scotland</p>
+        <!-- Project Card 7: Bridge Structural Assessment -->
+        <div class="project-card" data-project-id="project-6" onclick="showPanel('project-6'); return false;">
+          <div class="carousel-container">
+            <div class="carousel-wrapper">
+              <img src="images/project-6-cover.jpg" alt="Bridge Assessment" class="carousel-image" />
+            </div>
+          </div>
+          <div class="project-card-info">
+            <div class="carousel-title-link">
+              <h3 class="carousel-title">Bridge Structural Investigation</h3>
+              <p class="carousel-location">Scotland</p>
+            </div>
+          </div>
         </div>
-        <div class="project-description-box">
-          <p class="project-description">The Naver Bridge is an 80+ year-old structure that required a review of traffic load models for UK highway structures, considering heavier vehicles (SV80, ALL 40T, and Piling Rig loads). Our team was involved in modelling and analysing these additional bridge loads and assessing the capacity of the bridge's structural elements to handle increased loading.</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Project 7: Future Projects -->
-    <div class="project-item" style="background-image: url('images/project-future.jpg');">
-      <div class="project-overlay">
-        <div class="project-title-box">
-          <h2 class="project-title">Future Projects</h2>
-          <p class="project-location">Coming Soon</p>
-        </div>
-        <div class="project-description-box">
-        </div>
       </div>
     </div>
   </div>
@@ -470,7 +476,7 @@ Beyond design, our team prepared detailed project estimations and handled contra
         </div>
         <div class="col-lg-8">
           <p class="text-white opacity-75 mb-4">Tell us about your project and we will get back to you shortly.</p>
-          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form class="contact-form" id="contactForm" onsubmit="handleContactFormSubmit(event);">
             <div class="row g-3">
               <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Your Name" required /></div>
               <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Your Email" required /></div>
@@ -487,6 +493,387 @@ Beyond design, our team prepared detailed project estimations and handled contra
               <div class="col-12"><button type="submit" class="btn btn-submit">Send Message</button></div>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: CONTACT SUCCESS MESSAGE -->
+  <div id="panel-contact-success" class="page-panel bg-accent panel-scrollable">
+    <div class="contact-success-container">
+      <div class="contact-success-content">
+        <div class="success-icon">✓</div>
+        <h1 class="success-title">Message Sent Successfully!</h1>
+        <p class="success-message">Thank you for reaching out to Guru Gruha Consultants. We have received your inquiry and will get back to you shortly.</p>
+        <div class="success-details">
+          <p class="success-detail-text">We appreciate your interest in our services and look forward to discussing your project with you.</p>
+          <p class="success-contact">In the meantime, if you have any urgent questions, feel free to contact us directly at:</p>
+          <p class="success-email"><strong>info@gurugruha.com</strong> | <strong>+91 9606957901</strong></p>
+        </div>
+        <a href="#" onclick="showPanel('contact'); return false;" class="btn btn-hero mt-4">Back to Contact Form</a>
+        <a href="#" onclick="showPanel('home'); return false;" class="btn btn-hero-outline mt-3">Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PROJECT HERITAGE DETAIL -->
+  <div id="panel-project-heritage" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <h1>Heritage Structures - Structural Investigation</h1>
+        <p class="hero-sub">India and New Zealand</p>
+        <a href="#" onclick="showPanel('projects'); return false;" class="btn btn-hero-outline mt-3">Back to Projects</a>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="project-detail-content">
+        
+        <!-- Image Carousel -->
+        <div class="project-detail-carousel mb-5">
+          <div class="detail-carousel-container">
+            <div class="detail-carousel-wrapper">
+              <div class="detail-carousel-slide active">
+                <img src="images/project-heritage-img-1.jpeg" alt="Project Image 1" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-heritage-img-2.jpeg" alt="Project Image 2" class="detail-carousel-image" />
+              </div>
+                <div class="detail-carousel-slide">
+                <img src="images/project-heritage-img-3.jpeg" alt="Project Image 3" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-heritage-img-4.jpeg" alt="Project Image 4" class="detail-carousel-image" />
+              </div>
+                <div class="detail-carousel-slide">
+                <img src="images/project-heritage-img-5.jpeg" alt="Project Image 5" class="detail-carousel-image" />
+              </div>
+            </div>
+            <button class="detail-carousel-nav detail-carousel-prev" onclick="detailCarouselPrev(this)">&#10094;</button>
+            <button class="detail-carousel-nav detail-carousel-next" onclick="detailCarouselNext(this)">&#10095;</button>
+            <div class="detail-carousel-dots">
+              <span class="dot active" onclick="detailCarouselGoto(this, 0)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 1)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 2)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 3)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 4)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="project-detail-title">Project Overview</h2>
+            <p class="project-detail-text">Our team led an extensive review of structural drawings and on-site non-destructive testing of existing RC buildings to understand typical construction practices and highlight potential seismic vulnerabilities. We developed a detailed seismic assessment methodology and demonstrated its successful application across multiple projects.</p>
+            <p class="project-detail-text">Our team recommends appropriate repair and retrofitting methodologies based on these detailed technical investigations. This comprehensive approach ensures that heritage structures are preserved while meeting modern safety standards and requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PROJECT 1 DETAIL -->
+  <div id="panel-project-1" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <h1>Residential, Commercial and Industrial Buildings</h1>
+        <p class="hero-sub">India</p>
+        <a href="#" onclick="showPanel('projects'); return false;" class="btn btn-hero-outline mt-3">Back to Projects</a>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="project-detail-content">
+        
+        <!-- Image Carousel -->
+        <div class="project-detail-carousel mb-5">
+          <div class="detail-carousel-container">
+            <div class="detail-carousel-wrapper">
+              <div class="detail-carousel-slide active">
+                <img src="images/project-1-img-4.jpeg" alt="Project Image 1" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-1-img-2.jpeg" alt="Project Image 2" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-1-img-3.jpeg" alt="Project Image 3" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-1-img-1.jpeg" alt="Project Image 4" class="detail-carousel-image" />
+              </div>
+            </div>
+            <button class="detail-carousel-nav detail-carousel-prev" onclick="detailCarouselPrev(this)">&#10094;</button>
+            <button class="detail-carousel-nav detail-carousel-next" onclick="detailCarouselNext(this)">&#10095;</button>
+            <div class="detail-carousel-dots">
+              <span class="dot active" onclick="detailCarouselGoto(this, 0)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 1)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 2)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 3)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="project-detail-title">Project Overview</h2>
+            <p class="project-detail-text">Our team delivered high-quality, Vastu-compliant 2D floor plans and realistic 3D renderings for various projects across India. We produced precise structural designs from initial concept to construction-ready blueprints while managing all design revisions and providing dedicated on-site investigation during the construction phase.</p>
+            <p class="project-detail-text">Beyond design, our team prepared detailed project estimations and handled contract management while liaising with architects, owners, and subcontractors. We provided comprehensive rate analysis, ensured project profitability and quality compliance via regular site inspections, and implemented cost-saving strategies through resource and material optimization. Our team collaborated closely with project partners to ensure on-time delivery according to technical specifications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PROJECT 2 DETAIL -->
+  <div id="panel-project-2" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <h1>Wastewater Tunnel Project</h1>
+        <p class="hero-sub">Auckland, NZ</p>
+        <a href="#" onclick="showPanel('projects'); return false;" class="btn btn-hero-outline mt-3">Back to Projects</a>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="project-detail-content">
+        
+        <!-- Image Carousel -->
+        <div class="project-detail-carousel mb-5">
+          <div class="detail-carousel-container">
+            <div class="detail-carousel-wrapper">
+              <div class="detail-carousel-slide active">
+                <img src="images/project-2-img-1.jpeg" alt="Project Image 1" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-2-img-2.jpeg" alt="Project Image 2" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-2-img-3.png" alt="Project Image 3" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-2-img-4.jpeg" alt="Project Image 4" class="detail-carousel-image" />
+              </div>
+            </div>
+            <button class="detail-carousel-nav detail-carousel-prev" onclick="detailCarouselPrev(this)">&#10094;</button>
+            <button class="detail-carousel-nav detail-carousel-next" onclick="detailCarouselNext(this)">&#10095;</button>
+            <div class="detail-carousel-dots">
+              <span class="dot active" onclick="detailCarouselGoto(this, 0)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 1)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 2)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 3)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="project-detail-title">Project Overview</h2>
+            <p class="project-detail-text">The Central Interceptor is New Zealand's largest wastewater tunnel project, consisting of a 14.7 km main tunnel, multiple shafts, a major pump station, and substantial wastewater network infrastructure. Our team contributed to various phases of design, such as preliminary design (PD) and detailed design (DD), addressed design change requests (DCR), and assisted with construction phase support (CPS).</p>
+            <p class="project-detail-text">We were involved in the modelling, analysis, and design of temporary works for control chambers and pump stations, temporary and permanent works for shaft lining and manhole structures, and the design of box culverts and retaining structures. Our team also drove end-to-end procurement, commercial leadership, financial management, cost-optimization, schedule management, and complex claims negotiation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PROJECT 3 DETAIL -->
+  <div id="panel-project-3" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <h1>Airport Domestic Terminal</h1>
+        <p class="hero-sub">Auckland, NZ</p>
+        <a href="#" onclick="showPanel('projects'); return false;" class="btn btn-hero-outline mt-3">Back to Projects</a>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="project-detail-content">
+        
+        <!-- Image Carousel -->
+        <div class="project-detail-carousel mb-5">
+          <div class="detail-carousel-container">
+            <div class="detail-carousel-wrapper">
+              <div class="detail-carousel-slide active">
+                <img src="images/project-3-img-1.jpeg" alt="Project Image 1" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-3-img-2.jpeg" alt="Project Image 2" class="detail-carousel-image" />
+              </div>
+            </div>
+            <button class="detail-carousel-nav detail-carousel-prev" onclick="detailCarouselPrev(this)">&#10094;</button>
+            <button class="detail-carousel-nav detail-carousel-next" onclick="detailCarouselNext(this)">&#10095;</button>
+            <div class="detail-carousel-dots">
+              <span class="dot active" onclick="detailCarouselGoto(this, 0)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 1)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="project-detail-title">Project Overview</h2>
+            <p class="project-detail-text">The redevelopment of Terminal 2 is a key feature of the Auckland Airport upgrade programme, delivering the gateway Auckland and New Zealand need. Our team refined project delivery and commercial performance by managing end-to-end claims, forecasting, and schedule management.</p>
+            <p class="project-detail-text">Additionally, our team led a digital transformation using AI-driven tools like Power BI to automate reporting and provide real-time financial insights. This integration ensures seamless operations and enhances passenger experience across the terminal facilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PROJECT 4 DETAIL -->
+  <div id="panel-project-4" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <h1>Underground Retaining Structures</h1>
+        <p class="hero-sub">India, New Zealand, Australia</p>
+        <a href="#" onclick="showPanel('projects'); return false;" class="btn btn-hero-outline mt-3">Back to Projects</a>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="project-detail-content">
+        
+        <!-- Image Carousel -->
+        <div class="project-detail-carousel mb-5">
+          <div class="detail-carousel-container">
+            <div class="detail-carousel-wrapper">
+              <div class="detail-carousel-slide active">
+                <img src="images/project-4-img-1.jpeg" alt="Project Image 1" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-4-img-2.jpeg" alt="Project Image 2" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-4-img-3.jpeg" alt="Project Image 3" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-4-img-4.jpeg" alt="Project Image 4" class="detail-carousel-image" />
+              </div>
+            </div>
+            <button class="detail-carousel-nav detail-carousel-prev" onclick="detailCarouselPrev(this)">&#10094;</button>
+            <button class="detail-carousel-nav detail-carousel-next" onclick="detailCarouselNext(this)">&#10095;</button>
+            <div class="detail-carousel-dots">
+              <span class="dot active" onclick="detailCarouselGoto(this, 0)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 1)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 2)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 3)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="project-detail-title">Project Overview</h2>
+            <p class="project-detail-text">A critical water main rupture occurred along a mountainous road in NSW after retained slopes along Jenolan Caves Road at Hampton failed during heavy rainfall. The failure prompted comprehensive geotechnical and structural investigations to assess the damaged slopes and design robust remediation solutions.</p>
+            <p class="project-detail-text">Our team was involved in the design and internal peer review of the piled barrier retaining wall structure, ensuring structural stability and longevity. The remediation design incorporated advanced soil mechanics analysis and modern construction techniques to prevent future failures and ensure road safety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PROJECT 5 DETAIL -->
+  <div id="panel-project-5" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <h1>Footbridges and Vehicular Bridges</h1>
+        <p class="hero-sub">Hong Kong</p>
+        <a href="#" onclick="showPanel('projects'); return false;" class="btn btn-hero-outline mt-3">Back to Projects</a>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="project-detail-content">
+        
+        <!-- Image Carousel -->
+        <div class="project-detail-carousel mb-5">
+          <div class="detail-carousel-container">
+            <div class="detail-carousel-wrapper">
+              <div class="detail-carousel-slide active">
+                <img src="images/project-5-img-1.jpeg" alt="Project Image 1" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-5-img-2.jpeg" alt="Project Image 2" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-5-img-3.jpeg" alt="Project Image 3" class="detail-carousel-image" />
+              </div>
+            </div>
+            <button class="detail-carousel-nav detail-carousel-prev" onclick="detailCarouselPrev(this)">&#10094;</button>
+            <button class="detail-carousel-nav detail-carousel-next" onclick="detailCarouselNext(this)">&#10095;</button>
+            <div class="detail-carousel-dots">
+              <span class="dot active" onclick="detailCarouselGoto(this, 0)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 1)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 2)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="project-detail-title">Project Overview</h2>
+            <p class="project-detail-text">This project involved the design of link bridges connecting the Amoy Plaza and the East Kowloon Cultural Centre (EKCC) across Ngau Tau Kok Road and Highway Flyover no. K56. The Amoy Plaza footbridge structure consists of a steel truss bridge designed to facilitate pedestrian connectivity and enhance urban accessibility in this dynamic cultural district.</p>
+            <p class="project-detail-text">Additionally, the redevelopment of Siu Ho Depot provides infrastructure and enabling works for future residential and public facilities. Our team was involved in the design of steel structures and steel connections for five link bridges (footbridges). In addition, our team handled the modelling and analysis of the carriage bridge at Tai Ho Interchange and prepared the necessary design calculations and reports for all structural elements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL: PROJECT 6 DETAIL -->
+  <div id="panel-project-6" class="page-panel panel-scrollable">
+    <div class="panel-page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container text-center text-white page-hero-content">
+        <h1>Bridge Structural Investigation</h1>
+        <p class="hero-sub">Scotland</p>
+        <a href="#" onclick="showPanel('projects'); return false;" class="btn btn-hero-outline mt-3">Back to Projects</a>
+      </div>
+    </div>
+    <div class="container section-pad">
+      <div class="project-detail-content">
+        
+        <!-- Image Carousel -->
+        <div class="project-detail-carousel mb-5">
+          <div class="detail-carousel-container">
+            <div class="detail-carousel-wrapper">
+              <div class="detail-carousel-slide active">
+                <img src="images/project-6-img-1.png" alt="Project Image 1" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-6-img-2.png" alt="Project Image 2" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-6-img-3.png" alt="Project Image 3" class="detail-carousel-image" />
+              </div>
+              <div class="detail-carousel-slide">
+                <img src="images/project-6-img-4.png" alt="Project Image 4" class="detail-carousel-image" />
+              </div>
+            </div>
+            <button class="detail-carousel-nav detail-carousel-prev" onclick="detailCarouselPrev(this)">&#10094;</button>
+            <button class="detail-carousel-nav detail-carousel-next" onclick="detailCarouselNext(this)">&#10095;</button>
+            <div class="detail-carousel-dots">
+              <span class="dot active" onclick="detailCarouselGoto(this, 0)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 1)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 2)"></span>
+              <span class="dot" onclick="detailCarouselGoto(this, 3)"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Description -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="project-detail-title">Project Overview</h2>
+            <p class="project-detail-text">This project involved the structural assessment of a historic bridge in Scotland that required a comprehensive review of traffic load models for UK highway structures, considering heavier vehicles (SV80, ALL 40T, and Piling Rig loads). The assessment aimed to evaluate the bridge's capacity to handle modern traffic patterns and increased vehicle weights.</p>
+            <p class="project-detail-text">Our team was involved in modelling and analysing these additional bridge loads and assessing the capacity of the bridge's structural elements to handle increased loading. We provided detailed recommendations for maintenance, reinforcement, or load restrictions to ensure continued safe operation of this heritage structure while accommodating modern infrastructure requirements.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -523,6 +910,160 @@ Beyond design, our team prepared detailed project estimations and handled contra
       });
     });
     showPanel('home');
+
+    /* ── Carousel Navigation Functions ──────── */
+    function carouselPrev(btn) {
+      const container = btn.closest('.carousel-container');
+      const slides = container.querySelectorAll('.carousel-slide');
+      const active = container.querySelector('.carousel-slide.active');
+      const currentIndex = Array.from(slides).indexOf(active);
+      const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      
+      active.classList.remove('active');
+      slides[prevIndex].classList.add('active');
+    }
+
+    function carouselNext(btn) {
+      const container = btn.closest('.carousel-container');
+      const slides = container.querySelectorAll('.carousel-slide');
+      const active = container.querySelector('.carousel-slide.active');
+      const currentIndex = Array.from(slides).indexOf(active);
+      const nextIndex = (currentIndex + 1) % slides.length;
+      
+      active.classList.remove('active');
+      slides[nextIndex].classList.add('active');
+    }
+
+    /* ── Detail Page Carousel Functions ───── */
+    function detailCarouselPrev(btn) {
+      const container = btn.closest('.detail-carousel-container');
+      const slides = container.querySelectorAll('.detail-carousel-slide');
+      const dots = container.querySelectorAll('.dot');
+      const active = container.querySelector('.detail-carousel-slide.active');
+      const currentIndex = Array.from(slides).indexOf(active);
+      const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      
+      active.classList.remove('active');
+      slides[prevIndex].classList.add('active');
+      
+      dots.forEach(d => d.classList.remove('active'));
+      dots[prevIndex].classList.add('active');
+    }
+
+    function detailCarouselNext(btn) {
+      const container = btn.closest('.detail-carousel-container');
+      const slides = container.querySelectorAll('.detail-carousel-slide');
+      const dots = container.querySelectorAll('.dot');
+      const active = container.querySelector('.detail-carousel-slide.active');
+      const currentIndex = Array.from(slides).indexOf(active);
+      const nextIndex = (currentIndex + 1) % slides.length;
+      
+      active.classList.remove('active');
+      slides[nextIndex].classList.add('active');
+      
+      dots.forEach(d => d.classList.remove('active'));
+      dots[nextIndex].classList.add('active');
+    }
+
+    function detailCarouselGoto(dot, index) {
+      const container = dot.closest('.detail-carousel-container');
+      const slides = container.querySelectorAll('.detail-carousel-slide');
+      const dots = container.querySelectorAll('.dot');
+      const active = container.querySelector('.detail-carousel-slide.active');
+      
+      active.classList.remove('active');
+      slides[index].classList.add('active');
+      
+      dots.forEach(d => d.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+
+    /* ── Touch/Swipe Support ────────────────── */
+    document.querySelectorAll('.carousel-container').forEach(carousel => {
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, false);
+
+      carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe(carousel);
+      }, false);
+
+      function handleSwipe(carouselEl) {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            // Swiped left → show next
+            carouselNext(carouselEl.querySelector('.carousel-next'));
+          } else {
+            // Swiped right → show previous
+            carouselPrev(carouselEl.querySelector('.carousel-prev'));
+          }
+        }
+      }
+    });
+
+    /* ── Detail Carousel Touch/Swipe Support ── */
+    document.querySelectorAll('.detail-carousel-container').forEach(carousel => {
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, false);
+
+      carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleDetailSwipe(carousel);
+      }, false);
+
+      function handleDetailSwipe(carouselEl) {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            // Swiped left → show next
+            detailCarouselNext(carouselEl.querySelector('.detail-carousel-next'));
+          } else {
+            // Swiped right → show previous
+            detailCarouselPrev(carouselEl.querySelector('.detail-carousel-prev'));
+          }
+        }
+      }
+    });
+
+    /* ── Contact Form Handler ──────────────── */
+    function handleContactFormSubmit(event) {
+      event.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(document.getElementById('contactForm'));
+      const contactData = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        project_type: formData.get('project_type'),
+        message: formData.get('message'),
+        timestamp: new Date().toLocaleString()
+      };
+      
+      // Store in local storage (optional - for reference)
+      const existingMessages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+      existingMessages.push(contactData);
+      localStorage.setItem('contactMessages', JSON.stringify(existingMessages));
+      
+      // Reset form
+      document.getElementById('contactForm').reset();
+      
+      // Show success panel
+      showPanel('contact-success');
+    }
   </script>
 </body>
 </html>
